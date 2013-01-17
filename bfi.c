@@ -92,7 +92,7 @@ void show_error(const int error)
 			printf("Error: Could not open file.\n");
 			break;
 		case ERROR_ARGS:
-			printf("Usage: ./bfi script\n");
+			printf("Usage: ./bfi <filename>\n");
 			break;
 		case ERROR_MCL:
 			printf("Error: Closing bracket(s) missing.\n");

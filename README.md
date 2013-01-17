@@ -7,10 +7,10 @@ A lightweight Brainfuck interpreter written in C.
 GNU GPLv3
 
 ## Authors
-    Marochkin Sergey (https://github.com/ziggi)
+Marochkin Sergey (https://github.com/ziggi)
 
 ## Thanks
-    avalak for http://habrahabr.ru/post/112919/
+avalak for http://habrahabr.ru/post/112919/
 
 ## Building
     gcc bfi.c -o bfi

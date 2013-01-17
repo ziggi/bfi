@@ -16,13 +16,13 @@
 enum { ERROR_OPEN, ERROR_ARGS, ERROR_MCL, ERROR_MOL };
 
 // validate source
-int validate(char *src);
+int validate(const char *src);
 
 // debug function
-void show_error(int error);
+void show_error(const int error);
 
 // brainfuck function
-void brainfuck(char *src);
+void brainfuck(const char *src);
 
 
 int main(int argc, char *argv[])
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 }
 
 // validate source
-int validate(char *src)
+int validate(const char *src)
 {
 	int len = strlen(src),
 		l = 0,
@@ -85,7 +85,7 @@ int validate(char *src)
 }
 
 // debug function
-void show_error(int error)
+void show_error(const int error)
 {
 	switch (error) {
 		case ERROR_OPEN:
@@ -106,7 +106,7 @@ void show_error(int error)
 	}
 }
 
-void brainfuck(char *src)
+void brainfuck(const char *src)
 {
 	char mem[MAX_CELLS] = {0};
 	int pointer = 0,
